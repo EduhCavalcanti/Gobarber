@@ -1,7 +1,6 @@
 //Estrutura da aplicação.................
-
-const express = require('express');
-const routes = require('./router');
+import express from 'express';
+import routes from './router';
 //Utilizando classes para ficar mais organizado e mais didatico
 class App {
   constructor() {
@@ -22,4 +21,4 @@ class App {
   };
 };
 //Exportando o server
-module.exports = new App().server;
+export default new App().server;

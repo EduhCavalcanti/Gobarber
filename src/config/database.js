@@ -6,7 +6,7 @@ module.exports = {
   database: 'gobarber',
   define: {
     timestamps: true,
-    underscored: true,
+    underscored: true, // faz a conversão de camelCase para underline... ex: userGrup ==> user_grup
     underscoredAll: true
 
   }

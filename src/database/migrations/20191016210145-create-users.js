@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('users', {
@@ -27,12 +25,12 @@ module.exports = {
         defaultValue: false, //por padrão todo usuário vai ser um cliente 
         allowNull: false
       },
-      create_at: {
-        type: Sequelize.Date,
+      created_at: {
+        type: Sequelize.DATE,
         allowNull: false
       },
-      update_at: {
-        type: Sequelize.Date,
+      updated_at: {
+        type: Sequelize.DATE,
         allowNull: false
       }
     });

@@ -1,6 +1,7 @@
 //Estrutura da aplicação.................
 import express from 'express';
 import routes from './router';
+import './database/index';
 //Utilizando classes para ficar mais organizado e mais didatico
 class App {
   constructor() {

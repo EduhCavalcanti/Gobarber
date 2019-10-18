@@ -15,7 +15,7 @@ class Database {
   //método init que vai fazer a conexão com o model
   init() {
     this.connection = new Sequelize(dataBaseConfig);
-    //Faz a conexão com o model com o init
+    //Faz a conexão com o model com o init percorrendo os models
     models.map(model => model.init(this.connection));
   };
 };

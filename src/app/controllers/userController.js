@@ -19,6 +19,9 @@ class userController {
       provider
     });
 
+  };
+  async update(req, res) {
+    return res.json({ Ok: 'true' })
   }
 };
 

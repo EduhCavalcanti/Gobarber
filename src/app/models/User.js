@@ -22,6 +22,10 @@ class User extends Model {
     });
     return this; // Sempre vai retornar o model que acabou de ser inicializado aqui dentro
   };
+  //Compara a senha que foi digitada com a do banco de dados
+  checkPassword(password) {
+    return bcrypt.compare(password, this.password_hash);
+  };
 };
 
 export default User;
